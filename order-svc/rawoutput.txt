@@ -1,0 +1,836 @@
+{
+     "data": [
+          [
+               3103.243546394187
+          ],
+          [
+               26.60560649470443
+          ],
+          [
+               26.622408792513927
+          ],
+          [
+               26.627760565648614
+          ],
+          [
+               26.627869679104805
+          ],
+          [
+               26.6278578522812
+          ],
+          [
+               26.627810959126418
+          ],
+          [
+               26.627867932537658
+          ],
+          [
+               26.626486392673574
+          ],
+          [
+               26.618894521619453
+          ],
+          [
+               26.618800626911288
+          ],
+          [
+               26.619542398797247
+          ],
+          [
+               26.61955329217425
+          ],
+          [
+               26.62112268843006
+          ],
+          [
+               39.21540338314317
+          ],
+          [
+               39.14216414241895
+          ],
+          [
+               39.13746040809151
+          ],
+          [
+               39.13625011729887
+          ],
+          [
+               39.13663489482338
+          ],
+          [
+               39.139185570592126
+          ],
+          [
+               39.111151840276854
+          ],
+          [
+               39.12455696093872
+          ],
+          [
+               39.13156507938888
+          ],
+          [
+               39.132947706468215
+          ],
+          [
+               39.233024618532404
+          ],
+          [
+               39.149090200218986
+          ],
+          [
+               39.14586214108448
+          ],
+          [
+               38.99551693132349
+          ],
+          [
+               38.94488575531646
+          ],
+          [
+               51.87639256230496
+          ],
+          [
+               73.43200359408385
+          ],
+          [
+               73.43511141726944
+          ],
+          [
+               73.44246791897973
+          ],
+          [
+               73.43757049921584
+          ],
+          [
+               73.53081511268883
+          ],
+          [
+               73.48147141605462
+          ],
+          [
+               73.39787858558776
+          ],
+          [
+               73.3788745074621
+          ],
+          [
+               73.38711584196207
+          ],
+          [
+               73.41969160459955
+          ],
+          [
+               73.43483009925907
+          ],
+          [
+               73.43640183889684
+          ],
+          [
+               69.28494509010898
+          ],
+          [
+               60.980383820177465
+          ],
+          [
+               60.980642339706534
+          ],
+          [
+               60.97645193776809
+          ],
+          [
+               60.97632861968736
+          ],
+          [
+               60.97874869534193
+          ],
+          [
+               60.97255014109611
+          ],
+          [
+               60.97805402391554
+          ],
+          [
+               60.99300376266895
+          ],
+          [
+               60.97976345415864
+          ],
+          [
+               60.97983608163472
+          ],
+          [
+               60.97964064057197
+          ],
+          [
+               60.98118009726368
+          ],
+          [
+               60.977131028922784
+          ],
+          [
+               60.984574006201804
+          ],
+          [
+               60.980663811408604
+          ],
+          [
+               60.9498250354522
+          ],
+          [
+               60.95710836634443
+          ],
+          [
+               60.95707566179914
+          ],
+          [
+               60.9570853291339
+          ],
+          [
+               9.380647506019814
+          ]
+     ],
+     "dimensions": [
+          {
+               "time": [
+                    {
+                         "label": "Total",
+                         "name": "total"
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-05",
+                         "name": "2019-06-05",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-06",
+                         "name": "2019-06-06",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-07",
+                         "name": "2019-06-07",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-08",
+                         "name": "2019-06-08",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-09",
+                         "name": "2019-06-09",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-10",
+                         "name": "2019-06-10",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-11",
+                         "name": "2019-06-11",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-12",
+                         "name": "2019-06-12",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-13",
+                         "name": "2019-06-13",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-14",
+                         "name": "2019-06-14",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-15",
+                         "name": "2019-06-15",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-16",
+                         "name": "2019-06-16",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-17",
+                         "name": "2019-06-17",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-18",
+                         "name": "2019-06-18",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-19",
+                         "name": "2019-06-19",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-20",
+                         "name": "2019-06-20",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-21",
+                         "name": "2019-06-21",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-22",
+                         "name": "2019-06-22",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-23",
+                         "name": "2019-06-23",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-24",
+                         "name": "2019-06-24",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-25",
+                         "name": "2019-06-25",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-26",
+                         "name": "2019-06-26",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-27",
+                         "name": "2019-06-27",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-28",
+                         "name": "2019-06-28",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-29",
+                         "name": "2019-06-29",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-06-30",
+                         "name": "2019-06-30",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-01",
+                         "name": "2019-07-01",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-02",
+                         "name": "2019-07-02",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-03",
+                         "name": "2019-07-03",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-04",
+                         "name": "2019-07-04",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-05",
+                         "name": "2019-07-05",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-06",
+                         "name": "2019-07-06",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-07",
+                         "name": "2019-07-07",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-08",
+                         "name": "2019-07-08",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-09",
+                         "name": "2019-07-09",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-10",
+                         "name": "2019-07-10",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-11",
+                         "name": "2019-07-11",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-12",
+                         "name": "2019-07-12",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-13",
+                         "name": "2019-07-13",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-14",
+                         "name": "2019-07-14",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-15",
+                         "name": "2019-07-15",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-16",
+                         "name": "2019-07-16",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-17",
+                         "name": "2019-07-17",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-18",
+                         "name": "2019-07-18",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-19",
+                         "name": "2019-07-19",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-20",
+                         "name": "2019-07-20",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-21",
+                         "name": "2019-07-21",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-22",
+                         "name": "2019-07-22",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-23",
+                         "name": "2019-07-23",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-24",
+                         "name": "2019-07-24",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-25",
+                         "name": "2019-07-25",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-26",
+                         "name": "2019-07-26",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-27",
+                         "name": "2019-07-27",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-28",
+                         "name": "2019-07-28",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-29",
+                         "name": "2019-07-29",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-30",
+                         "name": "2019-07-30",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-07-31",
+                         "name": "2019-07-31",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-08-01",
+                         "name": "2019-08-01",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-08-02",
+                         "name": "2019-08-02",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-08-03",
+                         "name": "2019-08-03",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-08-04",
+                         "name": "2019-08-04",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    },
+                    {
+                         "direct": null,
+                         "excluded": null,
+                         "extended": false,
+                         "label": "2019-08-05",
+                         "name": "2019-08-05",
+                         "parent": -1,
+                         "populated": true,
+                         "sort_order": null
+                    }
+               ]
+          }
+     ],
+     "filters": [
+          "Azure-Zones:select:centralus"
+     ],
+     "interval": "daily",
+     "measures": [
+          {
+               "label": "Total Cost ($)",
+               "name": "total_cost"
+          }
+     ],
+     "report": "Azure Containers Cost History",
+     "status": "ok",
+     "updated_at": "2019-08-06T10:30:45+00:00"
+}

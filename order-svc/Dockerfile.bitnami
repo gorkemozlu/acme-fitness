@@ -1,0 +1,44 @@
+FROM bitnami/python:3.7
+MAINTAINER Bill Shetti "billshetti@gmail.com"
+ENV ORDER_DB_HOST="localhost"
+ENV ORDER_DB_PORT="5432"
+ENV ORDER_DB_PASSWORD="password"
+ENV ORDER_DB_USERNAME="postgres"
+ENV PGPASSWORD="password"
+ENV ORDER_AUTH_DB="postgres"
+ENV PAYMENT_HOST="localhost"
+ENV PAYMENT_PORT="9000"
+
+ENV TRACER_HOST="localhost"
+ENV TRACER_PORT="6832"
+ENV JAEGER_HOST_AGENT="localhost"
+ENV JAEGER_HOST_PORT="6832"
+
+
+RUN install_packages postgresql-server-dev-all
+
+RUN pip3 install wheel
+RUN pip3 install psycopg2
+
+RUN install_packages postgresql-client
+
+RUN pip3 install flask
+RUN pip3 install flask_httpauth
+RUN pip3 install requests
+RUN pip3 install SQLAlchemy
+RUN pip3 install opentracing
+RUN pip3 install jaeger_client
+
+COPY ./requirements.txt /app/requirements.txt
+
+#RUN pip3 install -r requirements.txt
+
+WORKDIR /app
+ADD . /app
+COPY entrypoint/docker-entrypoint.sh /usr/local/bin/
+RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
+RUN ln -s /usr/local/bin/docker-entrypoint.sh /app # backwards compat
+
+EXPOSE 5000
+ENTRYPOINT ["docker-entrypoint.sh"]
+#CMD ["python3", "cart.py"]
