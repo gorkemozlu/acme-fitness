@@ -1,0 +1,23 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: payment-svc
+  namespace: my-apps
+  labels:
+    apps.tanzu.vmware.com/workload-type: server
+    app.kubernetes.io/part-of: payment-svc
+spec:
+  params:
+  - name: ports
+    value:
+    - containerPort: 9000
+      name: app
+      port: 9000
+  env:
+  - name: PAYMENT_PORT
+    value: "9000"
+  - name: USERS_HOST
+    value: users
+  - name: USERS_PORT
+    value: "8083"
+  image: harbor.mgt.mytanzu.org/acme/build/payment:v0.1

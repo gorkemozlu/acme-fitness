@@ -1,0 +1,36 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: catalog-svc
+  namespace: my-apps
+  labels:
+    apps.tanzu.vmware.com/workload-type: server
+    app.kubernetes.io/part-of: catalog-svc
+spec:
+  params:
+  - name: ports
+    value:
+    - containerPort: 8082
+      name: app
+      port: 8082
+  env:
+  - name: CATALOG_DB_HOST
+    value: catalog-mongo
+  - name: CATALOG_DB_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: catalog-mongo-pass
+        key: password
+  - name: CATALOG_DB_PORT
+    value: "27017"
+  - name: CATALOG_DB_USERNAME
+    value: "mongoadmin"
+  - name: CATALOG_PORT
+    value: "8082"
+  - name: CATALOG_VERSION
+    value: v1
+  - name: USERS_HOST
+    value: users
+  - name: USERS_PORT
+    value: "8083"
+  image: harbor.mgt.mytanzu.org/acme/build/catalog:v0.1

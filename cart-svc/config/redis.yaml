@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    app: acmefit
+    app.kubernetes.io/part-of: cart-redis
+  name: cart-redis-pass
+  namespace: my-apps
+data:
+  password: S2VlcEl0U2ltcGxlMSE=
+type: Opaque
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cart-redis
+  labels:
+    app: acmefit
+    service: cart-redis
+    app.kubernetes.io/part-of: cart-redis
+  namespace: my-apps
+spec:
+  ports:
+  - port: 6379
+    name: redis-cart
+  selector:
+    app: acmefit
+    service: cart-redis
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cart-redis
+  labels:
+    app: acmefit
+    service: cart-redis
+    version: 1.0.0
+    app.kubernetes.io/part-of: cart-redis
+  namespace: my-apps
+spec:
+  selector:
+    matchLabels:
+      app: acmefit
+      service: cart-redis
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: acmefit
+        service: cart-redis
+        app.kubernetes.io/part-of: cart-redis
+    spec:
+      containers:
+      - name: cart-redis
+        image: projects.registry.vmware.com/tanzu_meta_pocs/acme/redis:latest
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - name: redis
+          containerPort: 6379
+          protocol: TCP
+        env:
+        - name: REDIS_HOST
+          value: cart-redis
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cart-redis-pass
+              key: password
+        volumeMounts:
+        - mountPath: /var/lib/redis
+          name: cart-redis-data
+      volumes:
+      - name: cart-redis-data
+        emptyDir: {}

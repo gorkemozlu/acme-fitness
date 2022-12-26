@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    app: acmefit
+  name: users-redis-pass
+  namespace: my-apps
+data:
+  password: S2VlcEl0U2ltcGxlMSE=
+type: Opaque
+---
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: users-redis
+  namespace: my-apps
+  labels:
+    apps.tanzu.vmware.com/workload-type: server
+    app.kubernetes.io/part-of: users-redis
+spec:
+  params:
+  - name: ports
+    value:
+    - containerPort: 6379
+      name: app
+      port: 6379
+  env:
+  - name: REDIS_HOST
+    value: users-redis
+  - name: REDIS_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: users-redis-pass
+        key: password
+  image: projects.registry.vmware.com/tanzu_meta_pocs/acme/redis:latest

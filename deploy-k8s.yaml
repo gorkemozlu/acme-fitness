@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   creationTimestamp: null
-  name: app-acme
+  name: my-apps
 spec: {}
 status: {}
 ---
@@ -12,7 +12,7 @@ metadata:
   labels:
     app: acmefit
   name: cart-redis-pass
-  namespace: app-acme
+  namespace: my-apps
 data:
   password: S2VlcEl0U2ltcGxlMSE=
 type: Opaque
@@ -23,7 +23,7 @@ metadata:
   labels:
     app: acmefit
   name: catalog-mongo-pass
-  namespace: app-acme
+  namespace: my-apps
 data:
   password: S2VlcEl0U2ltcGxlMSE=
 type: Opaque
@@ -34,7 +34,7 @@ metadata:
   labels:
     app: acmefit
   name: order-postgres-pass
-  namespace: app-acme
+  namespace: my-apps
 data:
   password: S2VlcEl0U2ltcGxlMSE=
 type: Opaque
@@ -45,7 +45,7 @@ metadata:
   labels:
     app: acmefit
   name: users-mongo-pass
-  namespace: app-acme
+  namespace: my-apps
 data:
   password: S2VlcEl0U2ltcGxlMSE=
 type: Opaque
@@ -56,7 +56,7 @@ metadata:
   labels:
     app: acmefit
   name: users-redis-pass
-  namespace: app-acme
+  namespace: my-apps
 data:
   password: S2VlcEl0U2ltcGxlMSE=
 type: Opaque
@@ -65,7 +65,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mongodata
-  namespace: app-acme
+  namespace: my-apps
   annotations:
     volume.beta.kubernetes.io/storage-class: tanzu
   labels:
@@ -84,7 +84,7 @@ metadata:
   labels:
     app: acmefit
     service: cart-redis
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - port: 6379
@@ -101,7 +101,7 @@ metadata:
     app: acmefit
     service: cart-redis
     version: 1.0.0
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -149,7 +149,7 @@ metadata:
   labels:
     app: acmefit
     service: cart
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - name: http-cart
@@ -166,7 +166,7 @@ metadata:
   labels:
     app: acmefit
     service: cart
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -226,7 +226,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: catalog-initdb-config
-  namespace: app-acme
+  namespace: my-apps
   labels:
     app: acmefit
 data:
@@ -248,7 +248,7 @@ metadata:
   labels:
     app: acmefit
     service: catalog-db
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - port: 27017
@@ -265,7 +265,7 @@ metadata:
   labels:
     app: acmefit
     service: catalog-db
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -317,7 +317,7 @@ metadata:
   labels:
     app: acmefit
     service: catalog
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - name: http-catalog
@@ -334,7 +334,7 @@ metadata:
   labels:
     app: acmefit
     service: catalog
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -398,7 +398,7 @@ metadata:
   labels:
     app: acmefit
     service: payment
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - name: http-payment
@@ -415,7 +415,7 @@ metadata:
   labels:
     app: acmefit
     service: payment
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -452,7 +452,7 @@ metadata:
   labels:
     app: acmefit
     service: order-db
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - port: 5432
@@ -469,7 +469,7 @@ metadata:
   labels:
     app: acmefit
     service: order-db
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -525,7 +525,7 @@ metadata:
   labels:
     app: acmefit
     service: order
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - name: http-order
@@ -542,7 +542,7 @@ metadata:
   labels:
     app: acmefit
     service: order
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -613,7 +613,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: users-initdb-config
-  namespace: app-acme
+  namespace: my-apps
   labels:
     app: acmefit
 data:
@@ -634,7 +634,7 @@ metadata:
   labels:
     app: acmefit
     service: users-mongo
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - port: 27017
@@ -651,7 +651,7 @@ metadata:
   labels:
     app: acmefit
     service: users-mongo
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -702,7 +702,7 @@ metadata:
   labels:
     app: acmefit
     service: users-redis
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - port: 6379
@@ -718,7 +718,7 @@ metadata:
   labels:
     app: acmefit
     service: users-redis
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -766,7 +766,7 @@ metadata:
   labels:
     app: acmefit
     service: users
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - name: http-users
@@ -783,7 +783,7 @@ metadata:
   labels:
     app: acmefit
     service: users
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -851,7 +851,7 @@ metadata:
   labels:
     app: acmefit
     service: frontend
-  namespace: app-acme
+  namespace: my-apps
 spec:
   ports:
   - name: http-frontend
@@ -870,7 +870,7 @@ metadata:
   labels:
     app: acmefit
     service: frontend
-  namespace: app-acme
+  namespace: my-apps
 spec:
   selector:
     matchLabels:
@@ -919,7 +919,7 @@ apiVersion: projectcontour.io/v1
 kind: HTTPProxy
 metadata:
   name: acme
-  namespace: app-acme
+  namespace: my-apps
 spec:
   routes:
   - services:

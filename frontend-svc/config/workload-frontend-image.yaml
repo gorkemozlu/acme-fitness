@@ -1,0 +1,37 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: frontend-svc
+  namespace: my-apps
+  labels:
+    apps.tanzu.vmware.com/workload-type: server
+    app.kubernetes.io/part-of: frontend-svc
+spec:
+  params:
+  - name: ports
+    value:
+    - containerPort: 3000
+      name: app
+      port: 80
+  env:
+  - name: FRONTEND_PORT
+    value: "3000"
+  - name: USERS_HOST
+    value: 'users'
+  - name: CATALOG_HOST
+    value: 'catalog'
+  - name: ORDER_HOST
+    value: 'order'
+  - name: CART_HOST
+    value: 'cart'
+  - name: USERS_PORT
+    value: "8083"
+  - name: CATALOG_PORT
+    value: "8082"
+  - name: CART_PORT
+    value: "5000"
+  - name: ORDER_PORT
+    value: "6000"
+  - name: BANNER_TEXT
+    value: FRONTEND
+  image: harbor.mgt.mytanzu.org/acme/build/frontend:v0.1
